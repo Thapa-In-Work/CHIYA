@@ -1,0 +1,2318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIYA-CHIYA — Himalayan Tea Houses &amp; Gardens of Nepal</title>
+  <meta name="description"
+    content="SIYA-CHIYA grows, blends and pours orthodox tea from the terraced hills of Ilam, with tea houses and restaurants across Nepal — Kathmandu, Pokhara, Ilam and beyond." />
+  <link rel="canonical" href="https://siya-chiya.example.com/" />
+  <meta name="theme-color" content="#1f3a2e" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SIYA-CHIYA" />
+  <meta property="og:title" content="SIYA-CHIYA — Himalayan Tea Houses & Gardens of Nepal" />
+  <meta property="og:description"
+    content="Orthodox tea grown on the terraces of Ilam, poured at tea houses across Nepal." />
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1747164628765-9394c8496a9c?w=1200&q=80&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a2e'/%3E%3Cpath d='M16 28h32v6c0 10-7 18-16 18S16 44 16 34z' fill='%23f3ede0'/%3E%3Cpath d='M46 30h4c4 0 6 3 6 7s-3 7-7 7h-2' stroke='%23d9a441' stroke-width='3' fill='none'/%3E%3Cpath d='M32 28c-2-6 2-10 6-13' stroke='%23b5651d' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Work+Sans:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SIYA-CHIYA",
+  "url": "https://siya-chiya.example.com/",
+  "logo": "https://siya-chiya.example.com/favicon.svg",
+  "description": "Tea gardens, orthodox tea production, and tea-house restaurants across Nepal.",
+  "areaServed": "NP",
+  "address": { "@type": "PostalAddress", "addressLocality": "Kathmandu", "addressCountry": "NP" },
+  "sameAs": []
+}
+</script>
+
+  <style>
+    :root {
+      --pine: #1f3a2e;
+      --pine-2: #294f3c;
+      --pine-deep: #132720;
+      --copper: #b5651d;
+      --copper-2: #d98a4a;
+      --gold: #d9a441;
+      --ivory: #f3ede0;
+      --paper: #faf7f0;
+      --slate: #33454a;
+      --char: #201c18;
+      --line: rgba(32, 28, 24, 0.13);
+      --shadow: 0 24px 70px -30px rgba(19, 39, 32, 0.45);
+      --maxw: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--ivory);
+      color: var(--char);
+      font-family: 'Work Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    .display {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin: 0;
+      color: var(--pine-deep);
+    }
+
+    .accent-word {
+      font-style: italic;
+      color: var(--copper);
+      font-weight: 500;
+    }
+
+    .deva {
+      font-family: 'Noto Serif Devanagari', serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--copper);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 26px;
+      border-radius: 3px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      border: 1.5px solid transparent;
+      transition: transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+
+    .btn-primary {
+      background: var(--copper);
+      color: var(--ivory);
+    }
+
+    .btn-primary:hover {
+      background: var(--copper-2);
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px -12px rgba(181, 101, 29, 0.55);
+    }
+
+    .btn-ghost {
+      border-color: rgba(243, 237, 224, 0.55);
+      color: var(--ivory);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(243, 237, 224, 0.14);
+      transform: translateY(-3px);
+    }
+
+    .btn-line {
+      border-color: var(--pine);
+      color: var(--pine);
+    }
+
+    .btn-line:hover {
+      background: var(--pine);
+      color: var(--ivory);
+      transform: translateY(-3px);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    /* ---------- CUSTOM CURSOR ---------- */
+    .cursor-dot,
+    .cursor-ring {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9999;
+      will-change: transform;
+    }
+
+    .cursor-dot {
+      width: 7px;
+      height: 7px;
+      margin: -3.5px 0 0 -3.5px;
+      background: var(--copper);
+      border-radius: 50%;
+      transition: background .2s ease, opacity .2s ease;
+    }
+
+    .cursor-ring {
+      width: 34px;
+      height: 34px;
+      margin: -17px 0 0 -17px;
+      border: 1.4px solid rgba(181, 101, 29, 0.55);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: width .28s cubic-bezier(.2, .8, .2, 1), height .28s cubic-bezier(.2, .8, .2, 1), margin .28s cubic-bezier(.2, .8, .2, 1), border-color .28s ease, background .28s ease, opacity .2s ease;
+    }
+
+    .cursor-ring.hovered {
+      width: 44px;
+      height: 44px;
+      margin: -22px 0 0 -22px;
+      border-color: var(--copper);
+    }
+
+    .cursor-ring.labelled {
+      width: 76px;
+      height: 76px;
+      margin: -38px 0 0 -38px;
+      background: rgba(31, 58, 46, 0.9);
+      border-color: transparent;
+    }
+
+    .cursor-ring .lbl {
+      opacity: 0;
+      font-size: 0.66rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--ivory);
+      transition: opacity .18s ease;
+    }
+
+    .cursor-ring.labelled .lbl {
+      opacity: 1;
+    }
+
+    .has-custom-cursor,
+    .has-custom-cursor a,
+    .has-custom-cursor button {
+      cursor: none;
+    }
+
+    /* ---------- SCROLL PROGRESS ---------- */
+    .progress-track {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: rgba(31, 58, 46, 0.1);
+      z-index: 10000;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--copper), var(--gold));
+      width: 0%;
+      transition: width .08s linear;
+    }
+
+    /* ---------- REVEAL ANIMATIONS ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .8s cubic-bezier(.16, .8, .3, 1), transform .8s cubic-bezier(.16, .8, .3, 1);
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.94);
+      transition: opacity .8s ease, transform .8s ease;
+    }
+
+    .reveal-scale.in {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .reveal,
+      .reveal-scale {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+
+    /* ---------- NAV ---------- */
+    header.site {
+      position: sticky;
+      top: 3px;
+      z-index: 50;
+      background: rgba(243, 237, 224, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 28px;
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      gap: 2px;
+    }
+
+    .brand .word {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--pine-deep);
+    }
+
+    .brand .word span {
+      color: var(--copper);
+    }
+
+    .brand .sub {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--slate);
+    }
+
+    nav.links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    nav.links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--slate);
+      position: relative;
+      padding: 4px 0;
+    }
+
+    nav.links a.active,
+    nav.links a:hover {
+      color: var(--pine-deep);
+    }
+
+    nav.links a.active::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+      height: 2px;
+      background: var(--copper);
+    }
+
+    .cart-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border: 1.5px solid var(--pine);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--pine-deep);
+      transition: transform .2s ease;
+    }
+
+    .cart-pill.bump {
+      transform: scale(1.12);
+    }
+
+    .burger {
+      display: none;
+      background: none;
+      border: none;
+      padding: 6px;
+    }
+
+    .burger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--pine-deep);
+      margin: 5px 0;
+    }
+
+    .mobile-panel {
+      display: none;
+    }
+
+    @media (max-width:880px) {
+      nav.links {
+        display: none;
+      }
+
+      .burger {
+        display: block;
+      }
+
+      .mobile-panel.open {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        padding: 6px 28px 22px;
+        border-top: 1px solid var(--line);
+      }
+
+      .mobile-panel a {
+        padding: 12px 0;
+        font-size: 1.02rem;
+        font-weight: 500;
+        color: var(--slate);
+        border-bottom: 1px solid var(--line);
+      }
+    }
+
+    /* ---------- TERRACE DIVIDER ---------- */
+    .terrace {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .terrace path.step {
+      stroke-dasharray: 900;
+      stroke-dashoffset: 900;
+      transition: stroke-dashoffset 1.4s ease;
+    }
+
+    .terrace.in-view path.step {
+      stroke-dashoffset: 0;
+    }
+
+    .terrace circle.bush {
+      opacity: 0;
+      transform: scale(0.4);
+      transform-origin: center;
+      transition: opacity .6s ease .3s, transform .6s ease .3s;
+    }
+
+    .terrace.in-view circle.bush {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      position: relative;
+      min-height: 94vh;
+      display: flex;
+      align-items: flex-end;
+      color: var(--ivory);
+      overflow: hidden;
+    }
+
+    .hero-media {
+      position: absolute;
+      inset: -12% 0;
+      z-index: 0;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 124%;
+      object-fit: cover;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(19, 39, 32, 0.32) 0%, rgba(19, 39, 32, 0.55) 55%, rgba(19, 39, 32, 0.94) 100%);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      padding: 80px 28px 48px;
+      max-width: var(--maxw);
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .hero h1 {
+      color: var(--ivory);
+      font-size: clamp(2.6rem, 6vw, 4.8rem);
+      line-height: 1.02;
+      margin: 14px 0 22px;
+      max-width: 14ch;
+    }
+
+    .hero p.lead {
+      font-size: clamp(1rem, 1.6vw, 1.2rem);
+      max-width: 46ch;
+      color: rgba(243, 237, 224, 0.88);
+      margin-bottom: 32px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .scroll-cue {
+      position: absolute;
+      left: 50%;
+      bottom: 26px;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(243, 237, 224, 0.75);
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      animation: bob 2.4s ease-in-out infinite;
+    }
+
+    .scroll-cue .line {
+      width: 1px;
+      height: 34px;
+      background: linear-gradient(180deg, rgba(243, 237, 224, 0.9), transparent);
+    }
+
+    @keyframes bob {
+
+      0%,
+      100% {
+        transform: translate(-50%, 0);
+      }
+
+      50% {
+        transform: translate(-50%, 8px);
+      }
+    }
+
+    /* stat strip */
+    .stat-strip {
+      background: var(--pine-deep);
+      color: var(--ivory);
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stat-grid>div {
+      padding: 34px 20px;
+      text-align: center;
+      border-left: 1px solid rgba(243, 237, 224, 0.14);
+    }
+
+    .stat-grid>div:first-child {
+      border-left: none;
+    }
+
+    .stat-num {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--gold);
+    }
+
+    .stat-lbl {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(243, 237, 224, 0.75);
+      margin-top: 6px;
+    }
+
+    @media (max-width:760px) {
+      .stat-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .stat-grid>div:nth-child(3) {
+        border-left: none;
+      }
+
+      .stat-grid>div {
+        border-bottom: 1px solid rgba(243, 237, 224, 0.14);
+      }
+    }
+
+    .page-hero {
+      background: var(--pine-deep);
+      color: var(--ivory);
+      padding: 110px 28px 70px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-hero .wrap {
+      max-width: var(--maxw);
+      position: relative;
+      z-index: 2;
+    }
+
+    .page-hero h1 {
+      color: var(--ivory);
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      margin-top: 10px;
+    }
+
+    .page-hero p {
+      max-width: 55ch;
+      color: rgba(243, 237, 224, 0.82);
+      margin-top: 16px;
+      font-size: 1.05rem;
+    }
+
+    .page-hero-art {
+      position: absolute;
+      inset: 0;
+      opacity: 0.15;
+    }
+
+    section {
+      padding: 88px 0;
+    }
+
+    section.tight {
+      padding: 56px 0;
+    }
+
+    .section-head {
+      max-width: 640px;
+      margin-bottom: 48px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+      margin-top: 10px;
+    }
+
+    .section-head p {
+      margin-top: 14px;
+      color: var(--slate);
+      font-size: 1.02rem;
+      line-height: 1.6;
+    }
+
+    .section-head.center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .ladder {
+      display: flex;
+      flex-direction: column;
+      border-left: 2px solid var(--line);
+    }
+
+    .rung {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 24px;
+      padding: 26px 0 26px 28px;
+      position: relative;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .rung:last-child {
+      border-bottom: none;
+    }
+
+    .rung::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: 32px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--copper);
+      border: 3px solid var(--ivory);
+      box-shadow: 0 0 0 1px var(--copper);
+    }
+
+    .rung .elev {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: var(--pine);
+    }
+
+    .rung h3 {
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+    }
+
+    .rung p {
+      color: var(--slate);
+      margin: 0;
+      line-height: 1.55;
+      font-size: 0.96rem;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 0;
+    }
+
+    .flow-step {
+      padding: 22px 16px;
+      border-top: 3px solid var(--pine);
+      transition: transform .3s ease, border-color .3s ease;
+    }
+
+    .flow-step:hover {
+      transform: translateY(-6px);
+      border-color: var(--copper);
+    }
+
+    .flow-step .num {
+      font-family: 'Fraunces', serif;
+      color: var(--copper);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .flow-step h4 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.05rem;
+      margin: 8px 0 6px;
+      color: var(--pine-deep);
+    }
+
+    .flow-step p {
+      color: var(--slate);
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    @media (max-width:900px) {
+      .flow {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width:560px) {
+      .flow {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    @media (max-width:900px) {
+      .grid-3 {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-4 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width:600px) {
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .photo-card {
+      position: relative;
+      border-radius: 6px;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      box-shadow: var(--shadow);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s cubic-bezier(.2, .8, .2, 1);
+    }
+
+    .photo-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .photo-card .cap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 20px;
+      background: linear-gradient(0deg, rgba(19, 39, 32, 0.85), transparent);
+      color: var(--ivory);
+      font-weight: 600;
+    }
+
+    .gallery-tile {
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+      aspect-ratio: 1/1;
+    }
+
+    .gallery-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease, filter .5s ease;
+      filter: saturate(0.92);
+    }
+
+    .gallery-tile:hover img {
+      transform: scale(1.1);
+      filter: saturate(1.1);
+    }
+
+    .gallery-tile .tag {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      color: var(--ivory);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .city-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--pine-deep);
+      background: var(--paper);
+      transition: transform .2s ease, background .2s ease, color .2s ease;
+    }
+
+    .city-chip:hover {
+      background: var(--pine);
+      color: var(--ivory);
+      transform: translateY(-2px);
+    }
+
+    .band {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0;
+      color: var(--ivory);
+    }
+
+    .band-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .band-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .band::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: rgba(19, 39, 32, 0.72);
+    }
+
+    .band .wrap {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+    }
+
+    .band h2 {
+      color: var(--ivory);
+      font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+    }
+
+    .band p {
+      margin-top: 16px;
+      color: rgba(243, 237, 224, 0.85);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    /* testimonials */
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    @media (max-width:900px) {
+      .testi-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .testi-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 30px;
+      position: relative;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .testi-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .testi-quote {
+      font-family: 'Fraunces', serif;
+      font-size: 2.4rem;
+      color: var(--gold);
+      line-height: 0.4;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .testi-card p.body {
+      color: var(--slate);
+      font-size: 0.96rem;
+      line-height: 1.6;
+    }
+
+    .testi-who {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ivory);
+      font-weight: 700;
+      font-size: 0.85rem;
+      font-family: 'Fraunces', serif;
+      flex-shrink: 0;
+    }
+
+    .testi-who .meta {
+      font-size: 0.82rem;
+      color: var(--slate);
+    }
+
+    .testi-who .meta strong {
+      display: block;
+      color: var(--pine-deep);
+      font-size: 0.9rem;
+    }
+
+    /* team */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    @media (max-width:760px) {
+      .team-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .team-card {
+      text-align: center;
+    }
+
+    .team-card .avatar {
+      width: 84px;
+      height: 84px;
+      font-size: 1.6rem;
+      margin: 0 auto 14px;
+    }
+
+    .team-card h4 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.05rem;
+      color: var(--pine-deep);
+    }
+
+    .team-card span {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--copper);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .team-card p {
+      font-size: 0.85rem;
+      color: var(--slate);
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    footer.site {
+      background: var(--pine-deep);
+      color: rgba(243, 237, 224, 0.85);
+      padding: 72px 0 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 40px;
+    }
+
+    @media (max-width:900px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width:560px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer.site h4 {
+      color: var(--ivory);
+      font-family: 'Fraunces', serif;
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+    }
+
+    footer.site ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    footer.site a {
+      color: rgba(243, 237, 224, 0.78);
+      font-size: 0.92rem;
+    }
+
+    footer.site a:hover {
+      color: var(--gold);
+    }
+
+    .foot-form {
+      display: flex;
+      gap: 0;
+      border: 1px solid rgba(243, 237, 224, 0.35);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .foot-form input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      padding: 12px 14px;
+      color: var(--ivory);
+      font-size: 0.9rem;
+    }
+
+    .foot-form input::placeholder {
+      color: rgba(243, 237, 224, 0.5);
+    }
+
+    .foot-form button {
+      background: var(--copper);
+      border: none;
+      color: var(--ivory);
+      padding: 0 18px;
+      font-weight: 600;
+    }
+
+    .foot-bottom {
+      max-width: var(--maxw);
+      margin: 56px auto 0;
+      padding: 24px 28px 0;
+      border-top: 1px solid rgba(243, 237, 224, 0.15);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.8rem;
+      color: rgba(243, 237, 224, 0.55);
+    }
+
+    /* shop */
+    .filter-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .filter-btn {
+      border: 1.5px solid var(--line);
+      background: var(--paper);
+      color: var(--slate);
+      padding: 9px 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all .2s ease;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--pine);
+      color: var(--pine-deep);
+    }
+
+    .filter-btn.active {
+      background: var(--pine);
+      border-color: var(--pine);
+      color: var(--ivory);
+    }
+
+    .product {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      height: 100%;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .leaf-badge {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform .3s ease;
+    }
+
+    .product:hover .leaf-badge {
+      transform: rotate(-8deg) scale(1.06);
+    }
+
+    .product h3 {
+      font-size: 1.2rem;
+    }
+
+    .product .region {
+      font-size: 0.78rem;
+      color: var(--copper);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .product p.note {
+      color: var(--slate);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      flex-grow: 1;
+    }
+
+    .product .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 6px;
+    }
+
+    .price {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      color: var(--pine-deep);
+    }
+
+    .add-btn {
+      border: 1.5px solid var(--pine);
+      background: transparent;
+      color: var(--pine);
+      padding: 9px 16px;
+      border-radius: 3px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all .18s ease;
+    }
+
+    .add-btn.added {
+      background: var(--pine);
+      color: var(--ivory);
+    }
+
+    .special-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--gold);
+      color: var(--char);
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+
+    .branch-card {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 24px;
+      background: var(--paper);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .branch-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .branch-tag {
+      align-self: flex-start;
+      background: var(--pine);
+      color: var(--ivory);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 3px;
+      margin-bottom: 6px;
+    }
+
+    .branch-card h3 {
+      font-size: 1.2rem;
+    }
+
+    .branch-card .meta {
+      font-size: 0.88rem;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+
+    .relief-strip {
+      position: relative;
+      height: 280px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .relief-strip img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .relief-strip::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(19, 39, 32, 0.75), rgba(19, 39, 32, 0.15));
+      z-index: 1;
+    }
+
+    .pin {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--ivory);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .pin .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 2px solid var(--ivory);
+      margin-bottom: 6px;
+      animation: pulse 2.2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(217, 164, 65, 0.5);
+      }
+
+      50% {
+        box-shadow: 0 0 0 8px rgba(217, 164, 65, 0);
+      }
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .form-field label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--pine-deep);
+    }
+
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      border: 1.5px solid var(--line);
+      border-radius: 4px;
+      padding: 12px 14px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      background: #fff;
+      transition: border-color .2s ease;
+    }
+
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-color: var(--pine);
+    }
+
+    .confirm-box {
+      background: #e7efe9;
+      border: 1px solid var(--pine);
+      color: var(--pine-deep);
+      padding: 16px 18px;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .info-card {
+      background: var(--pine-deep);
+      color: var(--ivory);
+      border-radius: 6px;
+      padding: 32px;
+    }
+
+    .info-card h3 {
+      color: var(--ivory);
+      margin-bottom: 16px;
+    }
+
+    .info-card .item {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+      color: rgba(243, 237, 224, 0.9);
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+
+    .accordion-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--pine-deep);
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      padding: 0;
+    }
+
+    .accordion-a {
+      color: var(--slate);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-top: 10px;
+      max-width: 60ch;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 0;
+      background: var(--pine);
+      color: var(--ivory);
+      padding: 10px 16px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+      top: 12px;
+    }
+
+    @media (pointer:coarse) {
+
+      .cursor-dot,
+      .cursor-ring,
+      .progress-track {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="root"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+
+  <script type="text/babel" data-presets="react">
+    const { useState, useEffect, useRef, useCallback } = React;
+
+    /* ---------------- Images (Unsplash) ---------------- */
+    const IMG = {
+      terrace: "https://images.unsplash.com/photo-1747164628765-9394c8496a9c?w=1800&q=80&auto=format&fit=crop",
+      terraceMed: "https://images.unsplash.com/photo-1747164628765-9394c8496a9c?w=900&q=80&auto=format&fit=crop",
+      cafe: "https://images.unsplash.com/photo-1755163412328-df3b4c2b172e?w=1200&q=80&auto=format&fit=crop",
+      cafeSq: "https://images.unsplash.com/photo-1755163412328-df3b4c2b172e?w=700&h=700&q=80&auto=format&fit=crop",
+      himalaya: "https://images.unsplash.com/photo-1753952969735-9be9feb9a217?w=1800&q=80&auto=format&fit=crop",
+      himalayaMed: "https://images.unsplash.com/photo-1753952969735-9be9feb9a217?w=1000&q=80&auto=format&fit=crop",
+      pickers: "https://images.unsplash.com/photo-1743401424861-5293dbecac9e?w=1200&q=80&auto=format&fit=crop",
+      pickersSq: "https://images.unsplash.com/photo-1743401424861-5293dbecac9e?w=700&h=700&q=80&auto=format&fit=crop",
+      momo: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=1200&q=80&auto=format&fit=crop",
+      momoSq: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=700&h=700&q=80&auto=format&fit=crop",
+      stupa: "https://images.unsplash.com/photo-1529733905113-027ed85d7e33?w=1200&q=80&auto=format&fit=crop",
+      stupaSq: "https://images.unsplash.com/photo-1529733905113-027ed85d7e33?w=700&h=700&q=80&auto=format&fit=crop",
+    };
+
+    /* ---------------- SEO helper ---------------- */
+    function usePageMeta(title, description) {
+      useEffect(() => {
+        document.title = title + " — SIYA-CHIYA";
+        let meta = document.querySelector('meta[name="description"]');
+        if (meta) meta.setAttribute("content", description);
+        window.scrollTo(0, 0);
+      }, [title, description]);
+    }
+
+    /* ---------------- Reveal on scroll ---------------- */
+    function Reveal({ as: Tag = "div", className = "", delay = 0, scale = false, children, ...rest }) {
+      const ref = useRef(null);
+      const [inView, setInView] = useState(false);
+      useEffect(() => {
+        const el = ref.current;
+        if (!el) return;
+        const obs = new IntersectionObserver((entries) => {
+          entries.forEach(e => { if (e.isIntersecting) { setInView(true); obs.unobserve(el); } });
+        }, { threshold: 0.18 });
+        obs.observe(el);
+        return () => obs.disconnect();
+      }, []);
+      return (
+        <Tag ref={ref} className={(scale ? "reveal-scale " : "reveal ") + (inView ? "in " : "") + className}
+          style={{ transitionDelay: `${delay}ms` }} {...rest}>
+          {children}
+        </Tag>
+      );
+    }
+
+    function useTerraceReveal() {
+      const ref = useRef(null);
+      useEffect(() => {
+        const el = ref.current;
+        if (!el) return;
+        const obs = new IntersectionObserver((entries) => {
+          entries.forEach(e => { if (e.isIntersecting) el.classList.add("in-view"); });
+        }, { threshold: 0.3 });
+        obs.observe(el);
+        return () => obs.disconnect();
+      }, []);
+      return ref;
+    }
+
+    function TerraceDivider({ tone = "pine" }) {
+      const ref = useTerraceReveal();
+      const stroke = tone === "pine" ? "#1f3a2e" : "#b5651d";
+      return (
+        <svg ref={ref} className="terrace" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+          <path className="step" d="M0 80 L120 80 L160 55 L280 55 L320 30 L460 30 L500 10 L700 10 L740 30 L880 30 L920 55 L1040 55 L1080 80 L1200 80"
+            fill="none" stroke={stroke} strokeWidth="2.5" />
+          {[160, 320, 500, 740, 920, 1080].map((cx, i) => (
+            <circle key={i} className="bush" cx={cx} cy={i % 2 === 0 ? (i < 2 ? 55 : i < 4 ? 10 : 55) : 30} r="4" fill="#d9a441" />
+          ))}
+        </svg>
+      );
+    }
+
+    /* ---------------- Parallax hero media ---------------- */
+    function ParallaxImg({ src, alt, speed = 0.3 }) {
+      const ref = useRef(null);
+      useEffect(() => {
+        let raf;
+        const onScroll = () => {
+          raf = requestAnimationFrame(() => {
+            if (ref.current) {
+              const y = window.scrollY * speed;
+              ref.current.style.transform = `translateY(${y}px)`;
+            }
+          });
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        return () => { window.removeEventListener("scroll", onScroll); cancelAnimationFrame(raf); };
+      }, [speed]);
+      return <img ref={ref} src={src} alt={alt} />;
+    }
+
+    /* ---------------- Custom cursor ---------------- */
+    function CustomCursor() {
+      const dotRef = useRef(null);
+      const ringRef = useRef(null);
+      const pos = useRef({ x: 0, y: 0, rx: 0, ry: 0 });
+      const [hoverState, setHoverState] = useState({ hovered: false, label: "" });
+
+      useEffect(() => {
+        if (window.matchMedia && window.matchMedia("(pointer:coarse)").matches) return;
+        document.body.classList.add("has-custom-cursor");
+
+        const onMove = (e) => {
+          pos.current.x = e.clientX; pos.current.y = e.clientY;
+          if (dotRef.current) { dotRef.current.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`; }
+        };
+        const onOver = (e) => {
+          const labelEl = e.target.closest("[data-cursor]");
+          const linkEl = e.target.closest("a,button");
+          if (labelEl) { setHoverState({ hovered: true, label: labelEl.getAttribute("data-cursor") }); }
+          else if (linkEl) { setHoverState({ hovered: true, label: "" }); }
+          else { setHoverState({ hovered: false, label: "" }); }
+        };
+        let raf;
+        const loop = () => {
+          pos.current.rx += (pos.current.x - pos.current.rx) * 0.18;
+          pos.current.ry += (pos.current.y - pos.current.ry) * 0.18;
+          if (ringRef.current) { ringRef.current.style.transform = `translate(${pos.current.rx}px, ${pos.current.ry}px)`; }
+          raf = requestAnimationFrame(loop);
+        };
+        window.addEventListener("mousemove", onMove);
+        document.addEventListener("mouseover", onOver);
+        raf = requestAnimationFrame(loop);
+        return () => {
+          document.body.classList.remove("has-custom-cursor");
+          window.removeEventListener("mousemove", onMove);
+          document.removeEventListener("mouseover", onOver);
+          cancelAnimationFrame(raf);
+        };
+      }, []);
+
+      return (
+        <React.Fragment>
+          <div ref={dotRef} className="cursor-dot"></div>
+          <div ref={ringRef} className={"cursor-ring" + (hoverState.hovered ? " hovered" : "") + (hoverState.label ? " labelled" : "")}>
+            <span className="lbl">{hoverState.label}</span>
+          </div>
+        </React.Fragment>
+      );
+    }
+
+    /* ---------------- Scroll progress bar ---------------- */
+    function ScrollProgress() {
+      const barRef = useRef(null);
+      useEffect(() => {
+        const onScroll = () => {
+          const h = document.documentElement;
+          const scrolled = h.scrollTop;
+          const height = h.scrollHeight - h.clientHeight;
+          const pct = height > 0 ? (scrolled / height) * 100 : 0;
+          if (barRef.current) barRef.current.style.width = pct + "%";
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+        return () => window.removeEventListener("scroll", onScroll);
+      }, []);
+      return (
+        <div className="progress-track">
+          <div ref={barRef} className="progress-bar"></div>
+        </div>
+      );
+    }
+
+    /* ---------------- NavBar ---------------- */
+    const NAV_ITEMS = [
+      { href: "#/", label: "Home" },
+      { href: "#/about", label: "Our Story" },
+      { href: "#/shop", label: "Shop" },
+      { href: "#/locations", label: "Tea Houses" },
+      { href: "#/contact", label: "Contact" },
+    ];
+
+    function NavBar({ route, cartCount }) {
+      const [open, setOpen] = useState(false);
+      const [bump, setBump] = useState(false);
+      const prevCount = useRef(cartCount);
+      useEffect(() => {
+        if (cartCount !== prevCount.current) {
+          setBump(true);
+          const t = setTimeout(() => setBump(false), 300);
+          prevCount.current = cartCount;
+          return () => clearTimeout(t);
+        }
+      }, [cartCount]);
+
+      return (
+        <header className="site">
+          <div className="nav-inner">
+            <a href="#/" className="brand" onClick={() => setOpen(false)}>
+              <span className="word">SIYA<span>-</span>CHIYA</span>
+              <span className="sub deva" lang="ne">सिया·चिया · नेपाल</span>
+            </a>
+            <nav className="links" aria-label="Primary">
+              {NAV_ITEMS.map(item => (
+                <a key={item.href} href={item.href} className={route === item.href ? "active" : ""}>{item.label}</a>
+              ))}
+            </nav>
+            <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+              <a href="#/shop" className={"cart-pill" + (bump ? " bump" : "")} aria-label={`Bag, ${cartCount} items`}>
+                🧺 Bag · {cartCount}
+              </a>
+              <button className="burger" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen(o => !o)}>
+                <span></span><span></span><span></span>
+              </button>
+            </div>
+          </div>
+          <div className={"mobile-panel" + (open ? " open" : "")}>
+            {NAV_ITEMS.map(item => (
+              <a key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}</a>
+            ))}
+          </div>
+        </header>
+      );
+    }
+
+    /* ---------------- Footer ---------------- */
+    function Footer() {
+      const [email, setEmail] = useState("");
+      const [sent, setSent] = useState(false);
+      return (
+        <footer className="site">
+          <div className="wrap footer-grid">
+            <div>
+              <h4>SIYA-CHIYA</h4>
+              <p style={{ maxWidth: "38ch", lineHeight: 1.6, fontSize: "0.92rem", color: "rgba(243,237,224,0.75)" }}>
+                Orthodox tea grown on our own terraces in Ilam, poured at tea houses across Nepal since the hills first gave us two leaves and a bud.
+              </p>
+              <p className="deva" lang="ne" style={{ marginTop: 14, color: "var(--gold)", fontSize: "1rem" }}>धन्यवाद, फेरि आउनुहोला।</p>
+            </div>
+            <div>
+              <h4>Explore</h4>
+              <ul>
+                <li><a href="#/about">Our Story</a></li>
+                <li><a href="#/shop">Shop the Harvest</a></li>
+                <li><a href="#/locations">Tea Houses</a></li>
+                <li><a href="#/contact">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Visit Us</h4>
+              <ul>
+                <li>Head Garden — Ilam, Nepal</li>
+                <li>Flagship Tea House — Thamel, Kathmandu</li>
+                <li>Lakeside Counter — Pokhara</li>
+                <li><a href="#/locations">All branches →</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Stay Steeped</h4>
+              <p style={{ fontSize: "0.88rem", color: "rgba(243,237,224,0.7)", marginBottom: 12 }}>New harvests, new tea houses, once a month.</p>
+              {sent ? (
+                <p style={{ color: "var(--gold)", fontWeight: 600, fontSize: "0.9rem" }}>Thank you — you're on the list.</p>
+              ) : (
+                <form className="foot-form" onSubmit={(e) => { e.preventDefault(); if (email) setSent(true); }}>
+                  <input type="email" required placeholder="you@example.com" value={email} onChange={e => setEmail(e.target.value)} aria-label="Email address" />
+                  <button type="submit">Join</button>
+                </form>
+              )}
+            </div>
+          </div>
+          <div className="foot-bottom">
+            <span>© 2026 SIYA-CHIYA. All rights reserved.</span>
+            <span>Kathmandu · Ilam · Pokhara · Chitwan · Biratnagar</span>
+          </div>
+        </footer>
+      );
+    }
+
+    /* ================= HOME PAGE ================= */
+    const TESTIMONIALS = [
+      { quote: "The masala chiya at the Thamel branch tastes exactly like my grandmother's — I've stopped making it at home.", name: "Sarita K.", role: "Regular, Kathmandu", color: "var(--pine)" },
+      { quote: "We switched our hotel's breakfast tea to Ilam Black last year. Guests ask where to buy it before they've finished the pot.", name: "Rabin T.", role: "Lodge owner, Pokhara", color: "var(--copper)" },
+      { quote: "Visited the Ilam garden on a whim during a hike. Ended up staying for three cups and the whole story of the family.", name: "Meera J.", role: "Visitor, Ilam", color: "var(--gold)" },
+    ];
+
+    function Home() {
+      usePageMeta("Himalayan Tea Houses & Gardens of Nepal", "SIYA-CHIYA grows and blends orthodox tea across the terraces of Ilam, with tea houses and restaurants in Kathmandu, Pokhara, and beyond.");
+      return (
+        <main id="main">
+          <section className="hero">
+            <div className="hero-media"><ParallaxImg src={IMG.terrace} alt="Terraced tea garden hillside wrapped in morning mist" speed={0.25} /></div>
+            <div className="hero-overlay"></div>
+            <div className="hero-inner">
+              <p className="eyebrow" style={{ color: "var(--gold)" }}>Ilam · Kathmandu · Pokhara · Chitwan</p>
+              <h1><span className="accent-word">Chiya</span>, terraced by hand.</h1>
+              <p className="lead">We grow, pluck and roll orthodox tea on our family's terraces in the Ilam hills, then pour it — hot, spiced, and unhurried — at tea houses across Nepal.</p>
+              <div className="hero-ctas">
+                <a href="#/shop" className="btn btn-primary" data-cursor="Shop">Shop the harvest</a>
+                <a href="#/locations" className="btn btn-ghost" data-cursor="Visit">Find a tea house</a>
+              </div>
+            </div>
+            <div className="scroll-cue"><span>Scroll</span><span className="line"></span></div>
+          </section>
+
+          <div className="stat-strip">
+            <div className="wrap stat-grid">
+              <Reveal delay={0}><div><div className="stat-num">1962</div><div className="stat-lbl">Garden founded</div></div></Reveal>
+              <Reveal delay={80}><div><div className="stat-num">3</div><div className="stat-lbl">Terraced gardens</div></div></Reveal>
+              <Reveal delay={160}><div><div className="stat-num">6</div><div className="stat-lbl">Cities with tea houses</div></div></Reveal>
+              <Reveal delay={240}><div><div className="stat-num">40,000+</div><div className="stat-lbl">Cups poured monthly</div></div></Reveal>
+            </div>
+          </div>
+
+          <TerraceDivider />
+
+          <section>
+            <div className="wrap">
+              <Reveal as="div" className="section-head">
+                <p className="eyebrow">Grown at altitude</p>
+                <h2>Every rung of the hillside makes a different cup.</h2>
+                <p>Our gardens climb from the valley floor to the ridgeline above Ilam. The higher the terrace, the slower the leaf grows — and the more character it holds.</p>
+              </Reveal>
+              <div className="ladder">
+                {[
+                  ["1,200m", "Ilam Hillside", "Our founding garden — broad-leafed, malty black tea plucked twice a day through the monsoon flush."],
+                  ["1,800m", "Kanyam Ridge", "Cooler air slows the leaf down. This is where our pan-fired green tea and gunpowder pellets are grown."],
+                  ["2,100m", "Antu Danda", "Our highest, smallest plot. A short spring pluck of silver-tipped buds becomes our rarest white tea."],
+                ].map(([e, t, d], i) => (
+                  <Reveal as="div" className="rung" key={t} delay={i * 100}>
+                    <span className="elev">{e}</span>
+                    <div><h3>{t}</h3><p>{d}</p></div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <TerraceDivider tone="copper" />
+
+          <section style={{ background: "var(--paper)" }}>
+            <div className="wrap">
+              <Reveal as="div" className="section-head">
+                <p className="eyebrow">From leaf to cup</p>
+                <h2>Six steps, one afternoon, no shortcuts.</h2>
+                <p>Every batch we sell and pour passes through the same order our grandmother used, at a small factory beside the garden.</p>
+              </Reveal>
+              <div className="flow">
+                {[
+                  ["01", "Pluck", "Two leaves and a bud, taken by hand before the morning mist lifts."],
+                  ["02", "Wither", "Spread thin on bamboo trays so the leaf softens overnight."],
+                  ["03", "Roll", "Rolled by hand or drum to break the cell walls and release oils."],
+                  ["04", "Oxidize", "Left to rest and darken — this is what separates black from green."],
+                  ["05", "Dry", "Fired over low heat until moisture drops below one part in twenty."],
+                  ["06", "Sort", "Graded by leaf size and looks before it ever reaches a tin."],
+                ].map(([n, t, d], i) => (
+                  <Reveal as="div" className="flow-step" key={n} delay={i * 70}>
+                    <span className="num">{n}</span>
+                    <h4>{t}</h4>
+                    <p>{d}</p>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="wrap grid-2">
+              <Reveal>
+                <p className="eyebrow">Tea houses across Nepal</p>
+                <h2 style={{ fontSize: "clamp(1.8rem,3.4vw,2.4rem)", marginTop: 10 }}>Somewhere to sit down with the same leaf.</h2>
+                <p style={{ color: "var(--slate)", marginTop: 16, lineHeight: 1.6 }}>Beyond the tins, SIYA-CHIYA runs sit-down tea houses and restaurants in six cities — each pouring the garden's current harvest alongside a short, honest menu.</p>
+                <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 22 }}>
+                  {["Kathmandu", "Pokhara", "Ilam", "Chitwan", "Biratnagar", "Dharan"].map(c => (
+                    <span className="city-chip" key={c}>{c}</span>
+                  ))}
+                </div>
+                <a href="#/locations" className="btn btn-line" style={{ marginTop: 28 }} data-cursor="Explore">See all tea houses</a>
+              </Reveal>
+              <Reveal scale className="photo-card" data-cursor="View">
+                <img src={IMG.cafe} alt="Warm, wood-lined tea house interior with plants and low lighting" />
+                <div className="cap">Thamel Tea House, Kathmandu</div>
+              </Reveal>
+            </div>
+          </section>
+
+          <section className="tight">
+            <div className="wrap">
+              <Reveal as="div" className="section-head center">
+                <p className="eyebrow">A closer look</p>
+                <h2>From the terrace to the teapot.</h2>
+              </Reveal>
+              <div className="grid-4">
+                {[
+                  [IMG.pickersSq, "Morning pluck, Ilam", "Garden"],
+                  [IMG.cafeSq, "Thamel tea house", "Tea House"],
+                  [IMG.momoSq, "Fresh momo, every branch", "Kitchen"],
+                  [IMG.stupaSq, "Swoyambhunath, Kathmandu", "Culture"],
+                ].map(([src, cap, tag], i) => (
+                  <Reveal as="div" className="gallery-tile" key={cap} delay={i * 80} data-cursor="View">
+                    <img src={src} alt={cap} />
+                    <span className="tag">{tag}</span>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="band">
+            <div className="band-media"><ParallaxImg src={IMG.momo} alt="Steamed momo dumplings served on a plate" speed={0.15} /></div>
+            <div className="wrap">
+              <Reveal>
+                <p className="eyebrow" style={{ color: "var(--gold)" }}>Not just tea</p>
+                <h2>Momo, thukpa, and a full pot beside it.</h2>
+                <p>Every SIYA-CHIYA restaurant serves the food that's always sat alongside chiya in Nepal — steamed momo, thukpa, sel roti and a fierce dalle khursani achar — cooked fresh at each branch.</p>
+                <a href="#/locations" className="btn btn-primary" style={{ marginTop: 24 }} data-cursor="Find">Find the nearest kitchen</a>
+              </Reveal>
+            </div>
+          </section>
+
+          <section>
+            <div className="wrap">
+              <Reveal as="div" className="section-head center">
+                <p className="eyebrow">In their words</p>
+                <h2>What keeps people coming back for another pot.</h2>
+              </Reveal>
+              <div className="testi-grid">
+                {TESTIMONIALS.map((t, i) => (
+                  <Reveal as="div" className="testi-card" key={t.name} delay={i * 100}>
+                    <span className="testi-quote">"</span>
+                    <p className="body">{t.quote}</p>
+                    <div className="testi-who">
+                      <div className="avatar" style={{ background: t.color }}>{t.name[0]}</div>
+                      <div className="meta"><strong>{t.name}</strong>{t.role}</div>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    /* ================= ABOUT PAGE ================= */
+    const TEAM = [
+      { initials: "SR", name: "Siya Rai", role: "Founder's granddaughter, Master Blender", note: "Learned to roll leaf by hand at age nine; now oversees every batch that leaves the factory.", color: "var(--pine)" },
+      { initials: "DG", name: "Dawa Gurung", role: "Head of Gardens", note: "Manages the Ilam, Kanyam and Antu Danda terraces and the pluckers who work them.", color: "var(--copper)" },
+      { initials: "NT", name: "Nirmala Thapa", role: "Tea House Operations", note: "Keeps the recipe consistent across all six cities, branch to branch.", color: "var(--gold)" },
+      { initials: "BK", name: "Bishal Karki", role: "Head Chef, Restaurants", note: "Built the momo-and-thukpa menu that now anchors every branch kitchen.", color: "var(--pine-2)" },
+    ];
+
+    function About() {
+      usePageMeta("Our Story", "How a family tea garden in the Ilam hills grew into SIYA-CHIYA's tea houses across Nepal.");
+      return (
+        <main id="main">
+          <div className="page-hero">
+            <div className="page-hero-art"><ParallaxImg src={IMG.himalayaMed} alt="" speed={0.1} /></div>
+            <div className="wrap">
+              <p className="eyebrow" style={{ color: "var(--gold)" }}>Since the hills first gave us tea</p>
+              <h1>Our Story</h1>
+              <p>Three generations, one garden in Ilam, and a habit of pouring tea for anyone who sat down.</p>
+            </div>
+          </div>
+
+          <section>
+            <div className="wrap grid-2">
+              <Reveal scale className="photo-card" data-cursor="View">
+                <img src={IMG.pickers} alt="Tea pickers moving through a lush green tea field, baskets on their backs" />
+                <div className="cap">Morning pluck, Ilam garden</div>
+              </Reveal>
+              <Reveal>
+                <p className="eyebrow">How it started</p>
+                <h2 style={{ fontSize: "clamp(1.7rem,3vw,2.2rem)", marginTop: 10 }}>A hillside plot, planted for the family's own pot.</h2>
+                <p style={{ color: "var(--slate)", marginTop: 16, lineHeight: 1.65 }}>
+                  Our grandparents planted the first rows on a steep hillside outside Ilam not to sell, but to keep their own kettle full. Neighbours asked for cuttings, then for finished leaf, and by the time our parents took over the garden it was feeding tea stalls across the eastern hills.
+                </p>
+                <p style={{ color: "var(--slate)", marginTop: 14, lineHeight: 1.65 }}>
+                  SIYA-CHIYA is what we called the family blend long before it was a company name — <span className="deva" lang="ne">सिया</span> for the eldest daughter who first learned to roll leaf by hand, and <span className="deva" lang="ne">चिया</span>, simply, tea.
+                </p>
+              </Reveal>
+            </div>
+          </section>
+
+          <TerraceDivider />
+
+          <section style={{ background: "var(--paper)" }}>
+            <div className="wrap">
+              <Reveal as="div" className="section-head">
+                <p className="eyebrow">What we won't compromise on</p>
+                <h2>Three things that haven't changed since the first hillside row.</h2>
+              </Reveal>
+              <div className="grid-3">
+                {[
+                  ["var(--pine)", "M4 14C4 8 9 4 20 4c0 11-4 16-10 16-3 0-6-1-6-6z", "Terrace over plantation", "We keep our gardens small and stepped into the hillside, not flattened into rows, because that's what this land was built to grow."],
+                  ["var(--copper)", "M6 12h12M12 6v12", "Paid by the kilo, not the hour", "Our pluckers are paid for leaf brought in, at rates set with them each season — the same arrangement since our grandmother ran the books."],
+                  ["var(--gold)", "", "One garden, one factory", "Every tin and every teapot traces back to the same plot outside Ilam — we don't blend in leaf we haven't grown ourselves."],
+                ].map(([color, path, title, body], i) => (
+                  <Reveal as="div" className="product" key={title} delay={i * 100}>
+                    <div className="leaf-badge" style={{ background: color }}>
+                      {path ? (
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d={path} stroke="#f3ede0" strokeWidth="1.7" strokeLinecap="round" /></svg>
+                      ) : (
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7" stroke="#201c18" strokeWidth="1.6" /></svg>
+                      )}
+                    </div>
+                    <h3>{title}</h3>
+                    <p className="note">{body}</p>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="wrap">
+              <Reveal as="div" className="section-head center">
+                <p className="eyebrow">Who keeps the kettle on</p>
+                <h2>The people behind every pour.</h2>
+              </Reveal>
+              <div className="team-grid">
+                {TEAM.map((p, i) => (
+                  <Reveal as="div" className="team-card" key={p.name} delay={i * 90}>
+                    <div className="avatar" style={{ background: p.color }}>{p.initials}</div>
+                    <h4>{p.name}</h4>
+                    <span>{p.role}</span>
+                    <p>{p.note}</p>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="band">
+            <div className="band-media"><ParallaxImg src={IMG.himalaya} alt="Prayer flags fluttering with the Himalaya mountains behind" speed={0.15} /></div>
+            <div className="wrap">
+              <Reveal>
+                <p className="eyebrow" style={{ color: "var(--gold)" }}>Looking north</p>
+                <h2>Kanchenjunga at our backs, tea houses down every road south.</h2>
+                <p>From the garden in Ilam, our tea now travels to six cities — but every branch still pours from the same terraces, the same six steps, the same family recipe for masala chiya.</p>
+              </Reveal>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    /* ================= SHOP PAGE ================= */
+    const CATEGORIES = ["All", "Black", "Green", "White", "Herbal"];
+    const PRODUCTS = [
+      { name: "Ilam Black", cat: "Black", region: "Ilam · 1,200m", note: "Our founding leaf — malty, bright, and strong enough to take milk.", price: "NPR 450 / 100g", color: "var(--copper)" },
+      { name: "Kanyam Green", cat: "Green", region: "Kanyam Ridge · 1,800m", note: "Pan-fired the same evening it's plucked, grassy with a sweet finish.", price: "NPR 480 / 100g", color: "var(--pine)" },
+      { name: "Antu Danda White", cat: "White", region: "Antu Danda · 2,100m", note: "A short spring pluck of silver-tipped buds. Our rarest tea, by far.", price: "NPR 950 / 50g", color: "var(--gold)", special: true },
+      { name: "Himalayan Masala Chiya", cat: "Black", region: "House Blend", note: "Black tea, cardamom, ginger and clove — brewed the way it's poured at every branch.", price: "NPR 380 / 100g", color: "var(--copper-2)" },
+      { name: "Gorkha Gunpowder", cat: "Green", region: "Kanyam Ridge · 1,700m", note: "Tightly rolled green pellets with a smoky, long-brewing character.", price: "NPR 420 / 100g", color: "var(--pine-2)" },
+      { name: "Sacred Herbal", cat: "Herbal", region: "Caffeine-free blend", note: "Tulsi and lemongrass grown at the garden's edge, for the evening pot.", price: "NPR 350 / 100g", color: "#8a9a6b" },
+      { name: "Winter Frost Oolong", cat: "Black", region: "Antu Danda · Limited", note: "A once-a-year late pluck, oxidised just past green — honeyed and floral.", price: "NPR 780 / 100g", color: "#a8763f", special: true },
+      { name: "Marigold & Mint", cat: "Herbal", region: "Garden-edge blend", note: "Dried marigold petals and mint from the borders of the Ilam plot.", price: "NPR 360 / 100g", color: "#c98a2e" },
+    ];
+
+    function Shop({ onAdd, addedMap }) {
+      usePageMeta("Shop the Harvest", "Orthodox black, green, white and herbal tea grown on SIYA-CHIYA's own terraces in Ilam, Nepal.");
+      const [filter, setFilter] = useState("All");
+      const visible = filter === "All" ? PRODUCTS : PRODUCTS.filter(p => p.cat === filter);
+      return (
+        <main id="main">
+          <div className="page-hero">
+            <div className="page-hero-art"><ParallaxImg src={IMG.terraceMed} alt="" speed={0.1} /></div>
+            <div className="wrap">
+              <p className="eyebrow" style={{ color: "var(--gold)" }}>Straight from the garden</p>
+              <h1>The Harvest</h1>
+              <p>Eight teas, one hillside. Everything below is plucked, processed and packed at our own garden and factory in Ilam.</p>
+            </div>
+          </div>
+          <section>
+            <div className="wrap">
+              <div className="filter-row">
+                {CATEGORIES.map(c => (
+                  <button key={c} className={"filter-btn" + (filter === c ? " active" : "")} onClick={() => setFilter(c)}>{c}</button>
+                ))}
+              </div>
+              <div className="grid-3">
+                {visible.map((p, i) => (
+                  <Reveal as="div" className="product" key={p.name} delay={(i % 3) * 80} style={{ position: "relative" }}>
+                    {p.special && <span className="special-badge">Limited</span>}
+                    <div className="leaf-badge" style={{ background: p.color }}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 14C4 8 9 4 20 4c0 11-4 16-10 16-3 0-6-1-6-6z" stroke="#faf7f0" strokeWidth="1.6" /></svg>
+                    </div>
+                    <span className="region">{p.region}</span>
+                    <h3>{p.name}</h3>
+                    <p className="note">{p.note}</p>
+                    <div className="row">
+                      <span className="price">{p.price}</span>
+                      <button className={"add-btn" + (addedMap[p.name] ? " added" : "")} onClick={() => onAdd(p.name)}>
+                        {addedMap[p.name] ? "Added ✓" : "Add to bag"}
+                      </button>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+              <p style={{ marginTop: 40, color: "var(--slate)", fontSize: "0.92rem" }}>
+                All tea is plucked and processed at our own gardens in Ilam and Jhapa. Wholesale and franchise enquiries: see <a href="#/contact" style={{ color: "var(--pine)", fontWeight: 600 }}>Contact</a>.
+              </p>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    /* ================= LOCATIONS PAGE ================= */
+    const BRANCHES = [
+      { city: "Ilam", area: "Garden House — Flagship", tag: "Tea Garden Flagship", hours: "6:00 AM – 7:00 PM", phone: "+977 27-520 000" },
+      { city: "Kathmandu", area: "Thamel", tag: "Tea House + Restaurant", hours: "7:00 AM – 9:30 PM", phone: "+977 1-441 0000" },
+      { city: "Kathmandu", area: "Jhamsikhel, Lalitpur", tag: "Tea House + Restaurant", hours: "7:30 AM – 9:00 PM", phone: "+977 1-554 0000" },
+      { city: "Pokhara", area: "Lakeside", tag: "Tea House + Restaurant", hours: "7:00 AM – 9:30 PM", phone: "+977 61-462 000" },
+      { city: "Chitwan", area: "Sauraha Road", tag: "Tea Counter", hours: "6:30 AM – 8:00 PM", phone: "+977 56-580 000" },
+      { city: "Biratnagar", area: "Main Road", tag: "Tea House", hours: "7:00 AM – 8:30 PM", phone: "+977 21-460 000" },
+    ];
+
+    function Locations() {
+      usePageMeta("Tea Houses & Branches", "Find SIYA-CHIYA tea houses and restaurants across Nepal — Kathmandu, Pokhara, Ilam, Chitwan and Biratnagar.");
+      return (
+        <main id="main">
+          <div className="page-hero">
+            <div className="page-hero-art"><ParallaxImg src={IMG.himalayaMed} alt="" speed={0.1} /></div>
+            <div className="wrap">
+              <p className="eyebrow" style={{ color: "var(--gold)" }}>Six cities, one leaf</p>
+              <h1>Tea Houses &amp; Branches</h1>
+              <p>Every branch pours the garden's current harvest and cooks the same short menu of momo, thukpa and sel roti.</p>
+            </div>
+          </div>
+
+          <section className="tight">
+            <div className="wrap">
+              <Reveal scale className="relief-strip">
+                <img src={IMG.himalayaMed} alt="Himalayan mountain range as a backdrop for our branch spread" />
+                <span className="pin" style={{ left: "8%", bottom: "30%" }}><span className="dot"></span>Ilam</span>
+                <span className="pin" style={{ left: "32%", bottom: "55%" }}><span className="dot"></span>Biratnagar</span>
+                <span className="pin" style={{ left: "55%", bottom: "38%" }}><span className="dot"></span>Chitwan</span>
+                <span className="pin" style={{ left: "70%", bottom: "62%" }}><span className="dot"></span>Kathmandu</span>
+                <span className="pin" style={{ left: "88%", bottom: "45%" }}><span className="dot"></span>Pokhara</span>
+              </Reveal>
+              <p style={{ marginTop: 14, fontSize: "0.8rem", color: "var(--slate)" }}>An illustrative east-to-west spread of our branches — not to scale.</p>
+            </div>
+          </section>
+
+          <section>
+            <div className="wrap">
+              <div className="grid-3">
+                {BRANCHES.map((b, i) => (
+                  <Reveal as="div" className="branch-card" key={i} delay={(i % 3) * 90}>
+                    <span className="branch-tag">{b.tag}</span>
+                    <h3>{b.city}</h3>
+                    <p className="meta">{b.area}<br />Open {b.hours}<br />{b.phone}</p>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="tight">
+            <div className="wrap">
+              <Reveal as="div" className="section-head center">
+                <p className="eyebrow">Inside the branches</p>
+                <h2>Same leaf, same recipe, six different rooms.</h2>
+              </Reveal>
+              <div className="grid-3">
+                <Reveal className="photo-card" delay={0} data-cursor="View"><img src={IMG.cafe} alt="Tea house interior with wooden tables" /><div className="cap">Thamel, Kathmandu</div></Reveal>
+                <Reveal className="photo-card" delay={90} data-cursor="View"><img src={IMG.momo} alt="Plate of steamed momo" /><div className="cap">Kitchen, every branch</div></Reveal>
+                <Reveal className="photo-card" delay={180} data-cursor="View"><img src={IMG.stupa} alt="Swoyambhunath stupa in Kathmandu" /><div className="cap">Around the corner, Kathmandu</div></Reveal>
+              </div>
+            </div>
+          </section>
+
+          <section className="band">
+            <div className="band-media"><ParallaxImg src={IMG.momo} alt="Steamed momo dumplings" speed={0.15} /></div>
+            <div className="wrap">
+              <Reveal>
+                <p className="eyebrow" style={{ color: "var(--gold)" }}>Beyond the cup</p>
+                <h2>Momo, thukpa, sel roti — cooked fresh at every branch.</h2>
+                <p>Our restaurants exist because tea has always been served with something to eat in Nepal. Ask for the achar hot.</p>
+              </Reveal>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    /* ================= CONTACT PAGE ================= */
+    function Contact() {
+      usePageMeta("Get in Touch", "Contact SIYA-CHIYA for wholesale, franchise, feedback or general enquiries.");
+      const [form, setForm] = useState({ name: "", email: "", subject: "General", message: "" });
+      const [sent, setSent] = useState(false);
+      const [openFaq, setOpenFaq] = useState(null);
+
+      const handle = (k) => (e) => setForm(f => ({ ...f, [k]: e.target.value }));
+      const submit = (e) => { e.preventDefault(); setSent(true); };
+
+      const faqs = [
+        ["Do you offer wholesale pricing?", "Yes — gardens, cafés and shops ordering 5kg or more per month qualify for wholesale rates. Use the form and select Wholesale."],
+        ["Can I open a SIYA-CHIYA franchise in my city?", "We're currently reviewing franchise applications for cities outside our current six. Select Franchise and tell us your city."],
+        ["Is the tea available outside Nepal?", "Not yet by post — for now, every tin is sold at our tea houses or through partner shops inside Nepal."],
+      ];
+
+      return (
+        <main id="main">
+          <div className="page-hero">
+            <div className="page-hero-art"><ParallaxImg src={IMG.terraceMed} alt="" speed={0.1} /></div>
+            <div className="wrap">
+              <p className="eyebrow" style={{ color: "var(--gold)" }}>We'll put the kettle on</p>
+              <h1>Get in Touch</h1>
+              <p>General questions, wholesale orders, or franchise interest — this reaches our Kathmandu office directly.</p>
+            </div>
+          </div>
+
+          <section>
+            <div className="wrap grid-2" style={{ alignItems: "flex-start" }}>
+              <Reveal>
+                {sent && <div className="confirm-box">Thanks — your message has been noted. We'll write back within two working days.</div>}
+                <form onSubmit={submit}>
+                  <div className="form-field">
+                    <label htmlFor="name">Name</label>
+                    <input id="name" required value={form.name} onChange={handle("name")} placeholder="Your full name" />
+                  </div>
+                  <div className="form-field">
+                    <label htmlFor="email">Email</label>
+                    <input id="email" type="email" required value={form.email} onChange={handle("email")} placeholder="you@example.com" />
+                  </div>
+                  <div className="form-field">
+                    <label htmlFor="subject">Subject</label>
+                    <select id="subject" value={form.subject} onChange={handle("subject")}>
+                      <option>General</option>
+                      <option>Wholesale</option>
+                      <option>Franchise</option>
+                      <option>Feedback</option>
+                    </select>
+                  </div>
+                  <div className="form-field">
+                    <label htmlFor="message">Message</label>
+                    <textarea id="message" rows="5" required value={form.message} onChange={handle("message")} placeholder="How can we help?"></textarea>
+                  </div>
+                  <button type="submit" className="btn btn-primary">Send message</button>
+                </form>
+
+                <div style={{ marginTop: 48 }}>
+                  <h3 style={{ marginBottom: 8 }}>Frequently asked</h3>
+                  {faqs.map(([q, a], i) => (
+                    <div className="accordion-item" key={i}>
+                      <button className="accordion-q" onClick={() => setOpenFaq(openFaq === i ? null : i)} aria-expanded={openFaq === i}>
+                        {q} <span>{openFaq === i ? "–" : "+"}</span>
+                      </button>
+                      {openFaq === i && <p className="accordion-a">{a}</p>}
+                    </div>
+                  ))}
+                </div>
+              </Reveal>
+
+              <Reveal scale delay={120}>
+                <div className="info-card">
+                  <h3>Head Office</h3>
+                  <div className="item">📍 Thamel Marg, Kathmandu 44600, Nepal</div>
+                  <div className="item">☎️ +977 1-441 0000</div>
+                  <div className="item">✉️ hello@siya-chiya.example.com</div>
+                  <div className="item">🕐 Sunday – Friday, 9:00 AM – 5:00 PM</div>
+                  <TerraceDivider tone="copper" />
+                  <p style={{ fontSize: "0.85rem", color: "rgba(243,237,224,0.7)", marginTop: 12 }}>
+                    For garden visits, write ahead — the Ilam house can host small groups by appointment.
+                  </p>
+                </div>
+              </Reveal>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    /* ================= 404 ================= */
+    function NotFound() {
+      usePageMeta("Page Not Found", "The page you're looking for has moved or doesn't exist on SIYA-CHIYA.");
+      return (
+        <main id="main">
+          <div className="page-hero">
+            <div className="wrap">
+              <p className="eyebrow" style={{ color: "var(--gold)" }}>404</p>
+              <h1>This terrace doesn't exist.</h1>
+              <p>Try one of the pages in the menu, or head back <a href="#/" style={{ color: "var(--gold)", fontWeight: 600 }}>home</a>.</p>
+            </div>
+          </div>
+        </main>
+      );
+    }
+
+    /* ================= APP / ROUTER ================= */
+    function App() {
+      const [route, setRoute] = useState(window.location.hash || "#/");
+      const [addedMap, setAddedMap] = useState({});
+      const [cartCount, setCartCount] = useState(0);
+
+      useEffect(() => {
+        const onHash = () => setRoute(window.location.hash || "#/");
+        window.addEventListener("hashchange", onHash);
+        return () => window.removeEventListener("hashchange", onHash);
+      }, []);
+
+      const handleAdd = useCallback((name) => {
+        setAddedMap(m => ({ ...m, [name]: true }));
+        setCartCount(c => c + 1);
+        setTimeout(() => setAddedMap(m => ({ ...m, [name]: false })), 1800);
+      }, []);
+
+      let page;
+      switch (route) {
+        case "#/": page = <Home />; break;
+        case "#/about": page = <About />; break;
+        case "#/shop": page = <Shop onAdd={handleAdd} addedMap={addedMap} />; break;
+        case "#/locations": page = <Locations />; break;
+        case "#/contact": page = <Contact />; break;
+        default: page = <NotFound />;
+      }
+
+      return (
+        <React.Fragment>
+          <ScrollProgress />
+          <CustomCursor />
+          <NavBar route={route} cartCount={cartCount} />
+          {page}
+          <Footer />
+        </React.Fragment>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+
+</html>
